@@ -1,0 +1,34 @@
+### Variáveis
+@url = http://localhost:8086
+
+### Requisição GET
+GET {{url}}
+
+### Requisição GET
+GET {{url}}/contato
+
+### Requisição GET
+GET {{url}}/contato/3
+
+### Requisição POST
+POST {{url}}/contato
+Content-Type: application/json
+
+{
+    "nome": "PedroSara",
+    "email": "PedroSara@gmail.com",
+    "telefone": "(44) 9 9707-9169"
+}
+
+### Requisição PUT
+PUT {{url}}/contato/2
+Content-Type: application/json
+
+{
+    "nome": "sARA",
+    "email": "PedroSara@gmail.com",
+    "telefone": "(44) 9 9707-9169"
+}
+
+### Requisição DELETE
+DELETE {{url}}/contato/1
