@@ -1,0 +1,24 @@
+{
+  "name": "etapas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "sara": "node --watch ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedrinnhoUtumi/etapas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedrinnhoUtumi/etapas/issues"
+  },
+  "homepage": "https://github.com/PedrinnhoUtumi/etapas#readme",
+  "description": "",
+  "dependencies": {
+    "fastify": "^5.5.0"
+  }
+}
