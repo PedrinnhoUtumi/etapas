@@ -12,5 +12,18 @@ export class ContatoController {
     const contatos = this.contatoService.getAllContatos();
     return reply.send(contatos);
   }
+
+  async getContatoByEmail(request, reply) {
+    const { email } = request.query
+    const contatos = this.contatoService.getContatoByEmail(email);
+    if(!contatos) return reply.status(404).json({message: "Não foram encontrados contatos"});
+    return reply.send(contatos);
+  }
+
+  async createContato(request, reply) {
+    const contatos = this.contatoService.createContato();
+    if(!contatos) return reply.status(400).json({message: "Você deve colocar seu nome com mais de 3 caracteres"});
+    return reply.send(contatos);
+  }
   // ... etc ...
 }
